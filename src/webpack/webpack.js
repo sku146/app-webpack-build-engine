@@ -8,7 +8,7 @@ import forEach from 'lodash/forEach';
 import split from 'lodash/split';
 import isPlainObject from 'lodash/isPlainObject';
 import isFunction from 'lodash/isFunction';
-import findIndex from 'lodash/findIndex';
+import indexOf from 'lodash/indexOf';
 import spawn from 'cross-spawn';
 import {
   CLI_PATH,
@@ -158,7 +158,7 @@ const validateLintExecute = (tasks = []) => {
     exitError(MSG.FAIL.msg);
   }
   forEach(tasks, (task) => {
-    const idx = findIndex(CLI_PATH.VALIDATE.eslintTasks, task);
+    const idx = indexOf(CLI_PATH.VALIDATE.eslintTasks, task);
     const lint = (idx >= 0) ? 'eslint' : task;
     const lintTask = isValidTask(lint);
     if (lintTask && !lintTask.status) {

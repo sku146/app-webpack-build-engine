@@ -18,9 +18,13 @@ exports['default'] = {
     modules: ['node_modules'],
     extensions: ['*', '.js', '.jsx', '.json'],
     alias: {
+      actions: _path2['default'].resolve('' + process.cwd(), 'src/actions'),
       assets: _path2['default'].resolve('' + process.cwd(), 'src/assets'),
+      constants: _path2['default'].resolve('' + process.cwd(), 'src/constants'),
+      containers: _path2['default'].resolve('' + process.cwd(), 'src/containers'),
       components: _path2['default'].resolve('' + process.cwd(), 'src/components'),
       journeys: _path2['default'].resolve('' + process.cwd(), 'src/journeys'),
+      reducers: _path2['default'].resolve('' + process.cwd(), 'src/reducers'),
       copies: _path2['default'].resolve('' + process.cwd(), 'src/copies'),
       styles: _path2['default'].resolve('' + process.cwd(), 'src/styles'),
       utils: _path2['default'].resolve('' + process.cwd(), 'src/utils')
