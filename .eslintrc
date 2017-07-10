@@ -1,0 +1,6 @@
+{
+  "extends":[
+    "build-engine",
+    "build-engine/lodash"
+  ]
+}

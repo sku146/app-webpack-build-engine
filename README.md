@@ -1,2 +1,2 @@
-# webpack-build-engine
-Webpack 3 Build Engine for React boilerplate project
+# app-webpack-build-engine
+Webpack 2 build engine for React scaffold projects
