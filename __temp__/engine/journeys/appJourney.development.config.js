@@ -13,12 +13,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 exports['default'] = {
   appJourney: {
     entry: {
-      app: ['react-hot-loader/patch', 'webpack-dev-server/client?' + _common2['default'].protocol + '://' + _common2['default'].host + ':' + _common2['default'].port + '/', 'webpack/hot/only-dev-server', './src/journeys/appJourney/app.mount.jsx']
+      app: ['react-hot-loader/patch', 'webpack-dev-server/client?' + _common2['default'].protocol + '://' + _common2['default'].host + ':' + _common2['default'].port + '/', 'webpack/hot/only-dev-server', './src/journeys/appJourney/app.mount.jsx'],
+      styles: './src/styles/appJourney/default/main.scss'
     },
     output: {
       foldersFilesMap: {
         scripts: {
           app: 'app.mount'
+        },
+        css: {
+          styles: 'main.bundle'
         }
       }
     },

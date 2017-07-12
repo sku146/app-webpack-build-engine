@@ -138,6 +138,7 @@ const getOutput = (env = ENV.DEV, journey = '', brand = '') => {
 
 const getEntry = (env = ENV.DEV, journey = '', brand = '') => {
   const paths = getOutputPath(getFolderFilePath(env, journey));
+  const styleRef = [getEntryValue(env, 'styles', brand, journey)];
   const entries = {};
   forEach(paths, (prop, idx) => {
     let value = getEntryValue(env, prop.ref, brand, journey);
@@ -145,6 +146,7 @@ const getEntry = (env = ENV.DEV, journey = '', brand = '') => {
     if (!idx) {
       value = [
         ...value,
+        ...styleRef,
       ];
     }
     entries[prop.path] = value;

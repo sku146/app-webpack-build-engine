@@ -4,3 +4,8 @@
 - downgraded the eslint-plugin-jsx-a11y module 6.x.x to 5.0.x
 - removed the eslint task blocker (amended the conditions)
 - removed the lodash-webpack-plugin
+
+## v1.0.2 (July 12, 2017)
+
+### Fixed Lint Task execution issues
+- Fixed the additional tasks execution issues

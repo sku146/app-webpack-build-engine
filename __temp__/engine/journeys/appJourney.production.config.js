@@ -6,7 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 exports['default'] = {
   appJourney: {
     entry: {
-      app: ['./src/journeys/appJourney/app.mount.jsx']
+      app: ['./src/journeys/appJourney/app.mount.jsx'],
+      styles: './src/styles/appJourney/default/main.scss'
     },
     output: {
       foldersFilesMap: {
