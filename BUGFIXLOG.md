@@ -14,3 +14,11 @@
 
 ### Fixed Unit Test execution issues
 - upgraded the Jest version to '21.2.1'
+
+
+## v1.0.4 (Oct 10, 2017)
+
+### Fixed Babel execution issues
+- upgraded the Babel Preset Build Engine Module version to '1.0.1'
+- upgraded the Eslint Config Build Engine Module version to '1.0.3'
+

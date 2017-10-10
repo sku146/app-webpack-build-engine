@@ -135,9 +135,9 @@ const getScoutTask = (journey, brand = '', port = common.port) => {
 };
 
 const getScoutCommand = (program = {}) => {
-  let port = common.port;
+  let { port } = common;
   port += 1;
-  const scout = program.scout;
+  const { scout } = program;
   const splitValue = split(scout, '~');
   return (isArray(splitValue)) ?
     getScoutTask(splitValue[0], splitValue[1], port) : getScoutTask(splitValue, '', port);

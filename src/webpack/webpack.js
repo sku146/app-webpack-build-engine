@@ -1,5 +1,5 @@
 /* eslint no-console: ["error", { allow: ["info", "error"] }] */
-/* eslint new-cap: ["error", { "capIsNew": false }]*/
+/* eslint new-cap: ["error", { "capIsNew": false }] */
 import fs from 'fs';
 import chalk from 'chalk';
 import isEmpty from 'lodash/isEmpty';
