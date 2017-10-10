@@ -9,3 +9,8 @@
 
 ### Fixed Lint Task execution issues
 - Fixed the additional tasks execution issues
+
+## v1.0.3 (Oct 10, 2017)
+
+### Fixed Unit Test execution issues
+- upgraded the Jest version to '21.2.1'
